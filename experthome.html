@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> EXPERT </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="IMG/buysellicon.jpg" type="image" sizes="16x16">
+
+    <style>
+      body
+      {
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+      }
+        h1
+        {
+            width: 90%;
+            margin: auto;
+            padding-top:120px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding-left:90px;
+        padding-top:10px;
+        padding-bottom: 20px;
+        
+      }
+      .image-container .image-box {
+        margin: 10px;
+        width: 300px;
+        height: 100px;
+        padding-bottom: 250px; /* Creates the square shape */
+        padding-top:20px;
+        position: relative;
+        border-radius: 15px; /* Adds curved edges */
+        overflow: hidden; /* Prevents content from overflowing */
+      }
+      .image-container .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .image-container .image-box .description-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="1"></div>
+    <script>
+        load("expertheader.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <h1>VERIFICATION REQUESTS:</h1>
+    <div class="image-container">
+      <?php
+      for ($i = 1; $i <= 5; $i++) {
+        <div class="image-box">
+          <img src="<?php echo $randomImageUrl; ?>" alt="Image <?php echo $i; ?>" />
+          <div class="description-box">Image <?php echo $i; ?> description</div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+  </body>
+</html>

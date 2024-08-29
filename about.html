@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> ABOUT US</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/buysellicon.jpg" type="image" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<style>
+    /* Set the background color of the page */
+    body {
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-y: auto;
+}
+
+    /* Style for the "Hi" element */
+    .head
+    {
+        width: 90%;
+        margin: auto;
+        padding-left:10px;
+        padding-top: 25px;
+        letter-spacing: 2px;
+        text-align:center;
+        font-weight: 700;
+        font-size:20px;
+    }
+
+    .adminhead
+    {
+        width: 90%;
+        margin: auto;
+        padding-left:10px;
+        padding-top: 45px;
+        padding-bottom:30px;
+        letter-spacing: 2px;
+        text-align:center;
+        font-weight: 700;
+        font-size:20px;
+    }
+
+
+    .experthead
+    {
+        width: 90%;
+        margin: auto;
+        padding-left:10px;
+        padding-top: 25px;
+        padding-bottom:30px;
+        letter-spacing: 2px;
+        text-align:center;
+        font-weight: 700;
+        font-size:20px;
+    }
+
+    .userhead
+    {
+        width: 90%;
+        margin: auto;
+        padding-left:10px;
+        padding-top: 25px;
+        padding-bottom:30px;
+        letter-spacing: 2px;
+        text-align:center;
+        font-weight: 700;
+        font-size:20px;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+    }
+
+    /* Style for the footer */
+    footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: RELATIVE;
+            left: 0;
+            margin-top:80px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .col{
+            display:flex;
+            flex-direction: column;
+            height:200px;
+            width:200px;
+            padding-bottom:0px;
+        }
+
+        .row{
+            display:flex;
+            flex-direction: row;
+            padding-bottom:10px;
+            padding-left: 90px;
+            justify-content:center;
+        }
+
+        .image {
+            display:flex;
+            height:70% !important;
+            width:70% !important;
+        }
+
+    img{
+            border-radius: 20px !important;
+    }
+
+
+</style>
+
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.php");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <!--<div class="head">
+        <h1><b>ABOUT US</b> </h1>
+    </div>-->
+
+    <h2 class="adminhead">MEET THE DEVELOPERS</h2>
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <img src="img/ad1.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/ad2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="experthead">OUR EXPERTS</h2>
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <img src="img/ex1.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/ex2.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/ex3.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/ex4.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/ex5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="userhead">OUR USERS</div>
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <img src="img/user1.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/user2.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/user3.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/user4.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/user5.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/user6.jpg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <img src="img/user7.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+    <script>
+		function viewprod() {
+			window.location.href = "product.html"; 
+        }
+	</script>
+</body>
+
