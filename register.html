@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> SIGN UP | BUY & SELL</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/buysellicon.jpg" type="image" sizes="16x16">
+    <!-- EXTERNAL LINKS -->
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: lato, sans-serif;
+            overflow-y: auto;
+}
+
+.head{
+        margin: auto;
+        padding-left:10px;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 25px;
+}
+
+.box {
+		width: 1200px;
+		height: 650px;
+		background-color: #fff;
+		border: 3px solid #d510fc;
+		border-radius: 15px;
+        margin-left:260px;
+        margin-top:80px;
+	}
+
+    .row{
+        margin-left:61px;
+        margin-top:40px; 
+    }
+    
+    .col{
+        margin-bottom:30px;
+    }
+
+    .firstname{
+        border-color:#d52cff;
+        height:40px;
+        width:310px;
+        border-radius:20px;
+        padding-left:35px;
+        font-family: lato, sans-serif;
+        font-size: 20px;
+    }
+
+    .lastname{
+        border-color:#d52cff;
+        height:40px;
+        width:310px;
+        border-radius:20px;
+        padding-left:35px;
+        margin-left:20px;
+        font-family: lato, sans-serif;
+        font-size: 20px;
+    }
+
+    button {
+        float:left;
+        margin-top:20px;
+        margin-left: 110px;
+
+    }
+
+    .box-button {
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ea82ff;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .image {
+            height: 250px;
+            width: 250px;
+            padding-left: 60px;
+            padding-top: 1px;
+            display:flex;
+            flex-direction: column;
+        }
+
+    img{
+        border: 2px solid #d52cff;
+            border-radius: 190px !important;
+    }
+
+    .imgbtn{
+        height:20px;
+        width:200px;
+    }
+
+    .box-button2 {
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ea82ff;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left:50px;
+        transition: background-color 0.3s ease;
+    }
+
+.box-button:hover {
+    background-color: #efbaff;
+}
+
+.box-button2:hover {
+    background-color: #efbaff;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    float:right;
+    margin-right:110px;
+    margin-top:30px;
+}
+
+.imgbtn{
+    padding-top:40px;
+    padding-left:45px;
+}
+
+</style>
+
+<body>
+    <div class="box">
+        <h2 class="head">SIGN UP</h2>
+        <div class="content">
+            <div class="image">
+                <img src="img/buysellicon.jpg">
+                <form class="uploadbtn">
+                    <input class="imgbtn" type="file" name="myfile">
+                </form>
+            </div>
+            <div class="deets">
+            <form action="register.php" method="post">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="username" class="firstname" placeholder="PICK AN USERNAME">
+                        <input type="password" name="password" class="lastname" placeholder="SET A PASSWORD">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="fname" class="firstname" placeholder="firstname">
+                        <input type="text" name="lname" class="lastname" placeholder="lastname">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="email" class="firstname" placeholder="email id">
+                        <input type="text" name="mobile" class="lastname" placeholder="phone number">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="location" class="firstname" placeholder="location">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="btn">
+            <button class="box-button2" onclick="register()">REGISTER</button>
+            <!-- <button class="box-button" onclick="login()">LOGIN</button> -->
+        </form>
+        </div>
+    </div>
+    <script>
+		function login() {
+			window.location.href = "login.html"; 
+        }
+	</script>
+    
+</body>

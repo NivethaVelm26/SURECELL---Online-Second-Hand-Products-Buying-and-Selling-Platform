@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> BUY & SELL</title>
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="css/postad.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="1"></div>
+  <script>
+      load("header.html");
+      function load(url)
+      {
+          req = new XMLHttpRequest();
+          req.open("GET", url, false);
+          req.send(null);
+          document.getElementById(1).innerHTML = req.responseText;
+      }
+  </script>
+  <div class="main-content">
+    <div class="container mt-7">
+      <!-- Table -->
+      <div class="row">
+        <div class="col-xl-8 m-auto order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">POST AN AD</h3>
+                </div>
+                <div class="col-4 text-right">
+                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h3 class="heading-small text-muted mb-4">AD DETAILS</h3>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">PRODUCT TITLE</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="Samsung mobile..">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">PRODUCT DESCRIPTION</label>
+                        <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Say a few details about the product..</textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">CHOOSE A CATEGORY</label>
+                        <select name="category" class="upload-btn-wrapper" rows="4" id="category">
+                            <option value="mobiles">Mobiles</option>
+                            <option value="elec">Electronics and Appliances</option>
+                            <option value="land">Property</option>
+                            <option value="books">Books</option>
+                            <option value="furni">Furniture</option>
+                            <option value="toys">Toys</option>
+                        </select><br><br>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">SET A PRICE</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="Rs.">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Address -->
+                <h3 class="heading-small text-muted mb-4">PRODUCT IMAGES</h3>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">UPLOAD PRODUCT IMAGE</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="upload-btn-wrapper">
+                    <button class="btn">Choose image file</button>
+                    <input type="file" name="myfile" />
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!--Expert verification-->
+                <div class="upload-btn-wrapper">
+                  <button class="btn">Request Verification</button>
+              </div>
+                <hr class="my-4">
+                <!-- Description -->
+
+                <div class="upload-btn-wrapper">
+                    <button class="btn">SUBMIT</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <div id="4"></div>
+  <script>
+      load("footer.html");
+      function load(url)
+      {
+          req = new XMLHttpRequest();
+          req.open("GET", url, false);
+          req.send(null);
+          document.getElementById(4).innerHTML = req.responseText;
+      }
+  </script>
+</body>

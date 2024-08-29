@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> POST AD | BUY & SELL</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/buysellicon.jpg" type="image" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<style>
+    /* Set the background color of the page */
+    body {
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-y: auto;
+}
+
+    /* Style for the "Hi" element */
+    .head
+    {
+        width: 90%;
+        margin: auto;
+        padding-left:10px;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size:20px;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+    }
+   
+    .intitle{
+        border-color:#d52cff;
+        height:50px;
+        width:310px;
+        border-radius:20px;
+        padding-left:35px;
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        margin-left:125px;
+    }
+
+    .indesc{
+        border-color:#d52cff;
+        height:120px;
+        width:400px;
+        border-radius:20px;
+        padding-left:5px;
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        margin-left:50px;
+
+    }
+
+    .inprice{
+        border-color:#d52cff;
+        height:50px;
+        width:310px;
+        border-radius:20px;
+        padding-left:35px;
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        margin-left:165px;
+    }
+
+    .color-dropdown{
+        border-color:#d52cff;
+        height:50px;
+        width:310px;
+        border-radius:20px;
+        padding-left:35px;
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        margin-left:90px;
+    }
+
+    .deets{
+        padding-left:100px;
+    }
+
+    /* Style for the footer */
+    footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: RELATIVE;
+            left: 0;
+            margin-top:80px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .box-button {
+        padding: 20px 55px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #4dff73;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left:500px;
+        margin-bottom:50px;
+        transition: background-color 0.3s ease;
+    }
+
+    .imgbtn{
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left:30px;
+        margin-bottom:50px;
+        transition: background-color 0.3s ease;
+    }
+    .imgbtn{
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left:30px;
+        margin-bottom:50px;
+        transition: background-color 0.3s ease;
+    }
+
+    .deets1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:30px;
+    }
+    .deets2 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:30px;
+    }
+    .deets3 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:30px;
+    }
+    .deets4 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:30px;
+    }
+    .deets5 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:30px;
+    }
+
+.box-button:hover {
+    background-color: #9ffdc6;
+}
+
+.wrap{
+    padding-top:30px;
+    padding-left:30px;
+}
+
+.verf{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+
+</style>
+
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.php");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <div class="head">
+        <h1><b>POST AN AD</b> </h1>
+    </div>
+    <div class="content">
+        <div class="deets">
+            <h2 class="addetails">AD DETAILS</h2>
+            <div class="wrap">
+                <form action="postanad.php" name="file_name" class="uploadbtn" method="post" enctype="multipart/form-data">
+                <div class="deets1">
+                    <h3 class="prodtitle">PRODUCT TITLE</h3>
+                    <input type="text" name="name" class="intitle" placeholder="Samsung S23">
+                </div>
+                <div class="deets2">
+                    <h3 class="proddesc">PRODUCT DESCRIPTION</h3>
+                    <input type="text" name="desc" class="indesc" placeholder="A latest 2023 mobile.....">
+                </div>
+                <div class="deets3">
+                    <h3 class="proddesc">CHOOSE CATEGORY</h3>
+                    <select class="color-dropdown" name="categ" onchange="updateButton()">
+                        <option value="">--Select--</option>
+                        <option value="101">Mobiles</option>
+                        <option value="102">Electronics and appliances</option>
+                        <option value="103">Automobiles</option>
+                        <option value="106">Real estate</option>
+                        <option value="105">Books</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div class="deets4">
+                    <h3 class="prodprice">SET A PRICE</h3>
+                    <input type="text" name="price" class="inprice" placeholder="Rs. ">
+                </div>
+                <div class="deets5">
+                    <h3 class="prodimg">UPLOAD PRODUCT IMAGES</h3>
+                    
+                        <input class="imgbtn" type="file" name="filename" id="fileToUpload">            
+                </div>
+                <div class="btn">
+                    <button class="box-button">POST AD</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+        <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+    <script>
+		function viewprod() {
+			window.location.href = "product.html"; 
+        }
+	</script>
+</body>
+
